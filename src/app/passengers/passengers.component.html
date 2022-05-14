@@ -1,37 +1,22 @@
 <div>
-    <div class="title mt-4">
-        <span class="ms-4" style="color: gray;">Rutas de transmilenio</span>
-        <h4 class="text-left mt-2 ms-5">Lista de pasajeros</h4>
+  <div class="title mt-4">
+    <span class="ms-4" style="color: gray;">Rutas de transmilenio</span>
+    <h4 class="text-left mt-2 ms-5">Lista de pasajeros</h4>
+  </div>
+  <div class="content" style="background-color: #f3f3f3;">
+    <div class="container">
+      <!-- <ngx-datatable></ngx-datatable> -->
+      <table class="table bg-white">
+        <thead>
+          <tr>
+            <th scope="col">Ruta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Cantidad Personas</th>
+          </tr>
+        </thead>
+        <tbody #dataContainer>
+        </tbody>
+      </table>
     </div>
-    <div class="content" style="background-color: #f3f3f3;">
-        <div class="container">
-            <!-- <ngx-datatable></ngx-datatable> -->
-            <table class="table bg-white">
-                <thead>
-                    <tr>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Cantidad Personas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">2022/02/02</th>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2022/02/02</th>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2022/02/02</th>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2022/02/02</th>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+  </div>
 </div>

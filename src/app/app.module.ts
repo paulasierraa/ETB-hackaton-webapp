@@ -1,3 +1,4 @@
+import { SocketService } from './services/socket.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,10 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
+//* * url: endPoint * */
+
+
 
 @NgModule({
   declarations: [
@@ -20,9 +25,11 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     ReactiveFormsModule,
     FormsModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocketIoModule
   ],
   providers: [
+
   ],
   bootstrap: [AppComponent]
 })
