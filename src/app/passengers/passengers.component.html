@@ -3,20 +3,26 @@
     <span class="ms-4" style="color: gray;">Rutas de transmilenio</span>
     <h4 class="text-left mt-2 ms-5">Lista de pasajeros</h4>
   </div>
-  <div class="content" style="background-color: #f3f3f3;">
-    <div class="container">
-      <!-- <ngx-datatable></ngx-datatable> -->
-      <table class="table bg-white">
-        <thead>
-          <tr>
-            <th scope="col">Ruta</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Cantidad Personas</th>
-          </tr>
-        </thead>
-        <tbody #dataContainer>
-        </tbody>
-      </table>
+  <div class="content table-container" style="background-color: #f7f5f5;">
+    <div class="container mt-5 pt-5">
+      <ngx-datatable [columnMode]="'force'" class="material expandable " #dataContainer [rows]="rows"
+        [headerHeight]="60" [limit]="7" [rowHeight]="'auto'" [footerHeight]="50">
+        <ngx-datatable-column name="Ruta" prop="ruta"></ngx-datatable-column>
+        <ngx-datatable-column name="Fecha" prop="fecha"></ngx-datatable-column>
+        <ngx-datatable-column name="Cantidad Personas" prop="cantidadPersonas"></ngx-datatable-column>
+        <ngx-datatable-column name="Estado" prop="estado">
+          <ng-template let-row="row" let-value="value" let-expanded="expanded" ngx-datatable-cell-template>
+
+            <ng-container *ngIf="value">
+              <div class="data-container" class="d-flex align-items-center">
+                <div class="circle" style="margin-right: 2px"></div>
+                <p class="mb-0" style=" color: rgb(51, 179, 0);
+                ">Enviando Ruta</p>
+              </div>
+            </ng-container>
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
     </div>
   </div>
 </div>

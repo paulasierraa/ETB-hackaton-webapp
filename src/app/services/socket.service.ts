@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class SocketService extends Socket {
 
   constructor() {
-    super({url:"http://localhost:3000"})
-   }
+    super({ url: "http://localhost:3000" })
+  }
 
 }

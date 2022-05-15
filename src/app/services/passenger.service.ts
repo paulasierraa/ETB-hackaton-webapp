@@ -9,7 +9,5 @@ export class PassengerService {
 
   constructor(private socketService:SocketService) {
   }
-  emmitEvent(){
-  }
 
 }

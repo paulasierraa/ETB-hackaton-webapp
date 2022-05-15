@@ -1,0 +1,16 @@
+@import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/bootstrap.scss';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/themes/dark.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
+.table-container{
+  height: 100vh;
+
+}
+.circle{
+  border-radius: 50%;
+  background-color: rgb(51, 179, 0);
+  width: 10px;
+  height: 10px;
+}

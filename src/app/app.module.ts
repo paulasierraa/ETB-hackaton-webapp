@@ -26,7 +26,8 @@ import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
     FormsModule,
     SharedModule,
     AppRoutingModule,
-    SocketIoModule
+    SocketIoModule,
+    NgxDatatableModule
   ],
   providers: [
 
